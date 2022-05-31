@@ -4,13 +4,10 @@ legoを利用して証明書だけを取得するためのdocker-compose、メ�
 
 ## how to use
 
-1. lego.envに下記を参照してAPIキーなどを設定
+```sh
+curl -sf https://raw.githubusercontent.com/5ym/lego-compose/main/init.sh | sh -s
+```
 
-<https://go-acme.github.io/lego/dns/>
-
-2. lego.shの内容を適宜書き換え
-3. CRONでlego.shを実行するよう設定
-
-下記参照
+cron推奨下記参照
 
 <https://daco.dev/blog/doodcron>
