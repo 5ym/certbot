@@ -4,6 +4,9 @@ services:
     image: goacme/lego
     entrypoint: watch -n 604800
     command: lego --dns cloudflare -d domain.test -d *.domain.test --email your-email -a run
+    dns:
+      - 1.1.1.1
+      - 1.0.0.1
     environment:
       - CLOUDFLARE_EMAIL=
       - CLOUDFLARE_API_KEY=
