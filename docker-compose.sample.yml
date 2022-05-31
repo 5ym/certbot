@@ -2,7 +2,7 @@ version: '3.8'
 services:
   lego:
     image: goacme/lego
-    entrypoint: watch -n 604800 lego --dns godaddy -d domain.test -d *.domain.test --email your-email run
+    entrypoint: watch -n 604800 lego --dns cloudflare -d domain.test -d *.domain.test --email your-email run
     environment:
       - CLOUDFLARE_EMAIL=
       - CLOUDFLARE_API_KEY=
