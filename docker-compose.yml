@@ -1,6 +1,6 @@
 version: '3.8'
 services:
-  certbot:
+  lego:
     image: goacme/lego
     entrypoint: tail -f /dev/null
     env_file:
