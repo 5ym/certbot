@@ -2,9 +2,9 @@ version: '3.8'
 services:
   lego:
     image: goacme/lego
-    entrypoint: tail -f /dev/null
-    env_file:
-      - lego.env
+    command: --dns godaddy -d domain.test -d *.domain.test --email your-email run
+    environment:
+      - CLOUDFLARE_EMAIL
     volumes:
       - ./letsencrypt:/.lego
     restart: always
