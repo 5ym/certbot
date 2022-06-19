@@ -11,4 +11,4 @@ services:
       - CLOUDFLARE_EMAIL=
       - CLOUDFLARE_API_KEY=
     volumes:
-      - ./letsencrypt:/.lego
+      - ./letsencrypt:/.lego/certificates
