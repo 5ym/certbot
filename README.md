@@ -8,6 +8,4 @@ legoを利用して証明書だけを取得するためのdocker-compose、メ�
 curl -sf https://raw.githubusercontent.com/5ym/lego-compose/main/init.sh | sh -s
 ```
 
-cron推奨下記参照
-
-<https://daco.dev/blog/doodcron>
+cron等不要watchコマンドで1週間に一回定期実行します
